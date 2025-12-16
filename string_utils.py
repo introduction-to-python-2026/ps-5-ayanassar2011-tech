@@ -13,7 +13,7 @@ def split_before_uppercases(formula):
         while i < len(formula) and formula[i].isdigit():
             num += formula[i]
             i += 1
-
+#
         atoms[atom] = atoms.get(atom, 0) + (int(num) if num else 1)
 
     return atoms
