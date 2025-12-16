@@ -51,8 +51,8 @@ def count_atoms_in_molecule(molecular_formula):
 
    dict = {} # Step 1: Initialize an empty dictionary to store atom counts
 
-    for atom in split_by_capitals(molecular_formula):
-        atom_name, atom_count = split_at_number(atom)
+    for atom in split_before_uppercases(molecular_formula):
+        atom_name, atom_count = split_at_digit(atom)
         
        dict += atom_name, atom_count  # Step 2: Update the dictionary with the atom name and count
 
